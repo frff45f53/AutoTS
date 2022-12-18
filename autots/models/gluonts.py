@@ -193,7 +193,7 @@ class GluonTS(ModelObject):
                     freq=ts_metadata['freq'],
                 )
         if self.gluon_model == 'DeepAR':
-            from gluonts.model.deepar import DeepAREstimator
+            from gluonts.mx import DeepAREstimator
 
             estimator = DeepAREstimator(
                 freq=ts_metadata['freq'],
